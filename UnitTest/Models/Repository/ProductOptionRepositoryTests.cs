@@ -22,7 +22,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void GetAllTest()
+        public void ProductOptionRepositoryGetAllTest()
         {
             //Arrange
             using (ProductOptionRepository productOptionRepository = new ProductOptionRepository())
@@ -36,7 +36,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void GetOneTest()
+        public void ProductOptionRepositoryGetOneTest()
         {
             //Arrange
             Guid guid = new Guid("0643ccf0-ab00-4862-b3c5-40e2731abcc9");
@@ -51,7 +51,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void AddTest()
+        public void ProductOptionRepositoryAddTest()
         {
             //Arrange
             ProductOption productOption = new ProductOption
@@ -71,7 +71,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void UpdateTest()
+        public void ProductOptionRepositoryUpdateTest()
         {
             //Arrange
             ProductOption productOption = new ProductOption
@@ -92,7 +92,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void DeleteByEntityTest()
+        public void ProductOptionRepositoryDeleteByEntityTest()
         {
             //Arrange
             ProductOption productOption = new ProductOption

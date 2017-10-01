@@ -23,7 +23,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void GetByNameTest()
+        public void ProductRepositoryGetByNameTest()
         {
             //Arrange
             string productName = "Apple";
@@ -38,7 +38,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void GetAllTest()
+        public void ProductRepositoryGetAllTest()
         {
             //Arrange
             using (ProductRepository productRepository = new ProductRepository())
@@ -52,7 +52,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void GetOneTest()
+        public void ProductRepositoryGetOneTest()
         {
             //Arrange
             Guid guid = new Guid("de1287c0-4b15-4a7b-9d8a-dd21b3cafec3");
@@ -67,7 +67,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void AddTest()
+        public void ProductRepositoryAddTest()
         {
             //Arrange
             Product product = new Product
@@ -89,7 +89,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void UpdateTest()
+        public void ProductRepositoryUpdateTest()
         {
             //Arrange
             Product product = new Product
@@ -110,7 +110,7 @@ namespace refactor_me.Models.Tests
         }
 
         [TestMethod()]
-        public void DeleteByEntityTest()
+        public void ProductRepositoryDeleteByEntityTest()
         {
             //Arrange
             Product product = new Product
