@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using refactor_me.Models;
+using System.Data.Entity;
 using System.Web.Http;
-using System.Web.Routing;
 
 namespace refactor_me
 {
@@ -11,6 +8,7 @@ namespace refactor_me
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new ProductDBInitializer());
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
