@@ -108,6 +108,10 @@
     <Compile Include="Models\ProductDB.cs" />
     <Compile Include="Models\ProductDBInitializer.cs" />
     <Compile Include="Models\ProductOption.cs" />
+    <Compile Include="Models\Repository\BaseRepository.cs" />
+    <Compile Include="Models\Repository\IRepository.cs" />
+    <Compile Include="Models\Repository\ProductOptionRepository.cs" />
+    <Compile Include="Models\Repository\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
